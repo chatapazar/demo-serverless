@@ -1,0 +1,11 @@
+specVersion: 0.36.0
+name: myfunc
+runtime: node
+registry: image-registry.openshift-image-registry.svc:5000/demo4
+namespace: demo4
+created: 2024-07-30T14:39:21.303249+07:00
+build:
+  builder: pack
+deploy:
+  namespace: demo4
+  image: image-registry.openshift-image-registry.svc:5000/demo4/myfunc:latest

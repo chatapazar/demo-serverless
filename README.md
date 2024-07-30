@@ -1,1 +1,66 @@
 # demo-serverless
+
+install serverless operator
+
+https://docs.openshift.com/serverless/1.33/install/install-serverless-operator.html
+
+https://docs.openshift.com/serverless/1.33/install/installing-knative-serving.html
+
+https://docs.openshift.com/serverless/1.33/install/installing-knative-eventing.html
+
+
+open terminal
+
+create project demo1
+run
+kn service create greeter --image quay.io/rhdevelopers/knative-tutorial-greeter:quarkus
+
+test curl from url after run kn
+
+
+create project demo2
+deploy with image from UI
+danielon30/quarkus-serverless:latest
+
+danielon30/springboot-serverless:latest
+
+danielon30/go-serverless:latest
+
+danielon30/python-serverless:latest
+
+danielon30/nodejs-serverless:latest
+
+create project demo3
+
+
+
+create project demo4
+install openshift pipeline
+
+https://docs.openshift.com/serverless/1.33/functions/serverless-functions-creating.html#odc-creating-functions_serverless-functions-creating
+
+kn func create -l node myfunc
+
+cd myfunc
+
+kn func deploy --remote
+
+curl test
+
+kn func create -l node -t cloudevents myfuncce
+
+cd myfuncce
+
+kn func deploy --remote
+
+https://developers.redhat.com/blog/2021/01/04/create-your-first-serverless-function-with-red-hat-openshift-serverless-functions#example_1__create_a_serverless_function_for_http_requests
+
+add channel all default
+
+add eventsource, pingsource
+
+*/2 * * * *
+
+add link
+
+wait until start

@@ -1,0 +1,12 @@
+specVersion: 0.36.0
+name: myfuncce
+runtime: node
+registry: image-registry.openshift-image-registry.svc:5000/demo4
+namespace: demo4
+created: 2024-07-30T15:03:29.216559+07:00
+invoke: cloudevent
+build:
+  builder: pack
+deploy:
+  namespace: demo4
+  image: image-registry.openshift-image-registry.svc:5000/demo4/myfuncce:latest
